@@ -1,0 +1,322 @@
+<!-- HTML starts within <body> tags -->
+<body>
+  <style>
+    @font-face {
+      font-family: Roboto-Black;
+      src: url(Roboto-Black.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Bold;
+      src: url(Roboto-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Regular;
+      src: url(Roboto-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Thin;
+      src: url(Roboto-Thin.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-ThinItalic;
+      src: url(Roboto-ThinItalic.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Medium;
+      src: url(Roboto-Medium.ttf);
+    }
+
+    @-webkit-keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .delay1 {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+
+    .delay2 {
+      -webkit-animation-delay: 0.7s;
+      -moz-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: SFProDisplay-Black, Roboto-Black;
+      font-weight: bolder;
+      font-size: 2.5vw;
+      margin-bottom: 100px;
+      margin-top: 10px;
+    }
+
+    .tagline {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      font-size: 72px;
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(270deg, #0096ff 0%, #00ffec 99%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .stats {
+      background-image: linear-gradient(
+        to left,
+        rgba(0, 150, 255, 0.61) 0%,
+        rgba(0, 255, 236, 0.2) 99%
+      );
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: space-evenly;
+    }
+
+    nav {
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: space-evenly;
+    }
+
+    nav p {
+      padding: 50px;
+    }
+
+    a {
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(to right, #024bff, #750288);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-decoration: none;
+    }
+
+    .boycotts {
+      font-size: 25px;
+    }
+
+    img {
+      border: 8px solid #ffffff;
+      margin: 10px;
+    }
+
+    .content {
+      font-size: 24px;
+      font-family: SFCompactText-Regular, Roboto-Regular;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin: 250px;
+      margin-top: 50px;
+    }
+
+    .img-caption {
+      background-color: white;
+    }
+
+    .quote {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      font-size: 30px;
+      margin: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(to right, #024bff, #750288);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .button {
+      font-size: 50px;
+    }
+  </style>
+
+  <nav>
+    <p class="romer"><a href="home">romer v. evans</a></p>
+    <p class="tribulations">
+      <a href="tribulations_and_triumphs" class="tribulations"
+        >tribulations and triumphs</a
+      >
+    </p>
+    <p class="boycotts"><a href="boycotts" class="boycotts">boycotts</a></p>
+    <p class="supremecourt">
+      <a href="battle_in_the_supreme_court">battle in the supreme court</a>
+    </p>
+    <p class="thesis"><a href="thesis">thesis</a></p>
+    <p class="process-paper"><a href="process_paper">process paper</a></p>
+    <p class="annotated-bibliography">
+      <a href="annotated_bibliography">annotated bibliography</a>
+    </p>
+  </nav>
+
+  <section class="intro">
+    <h2 class="tagline fadeInUp delay1">Boycotts</h2>
+    <h1 class="fadeInUp delay2">Romer v. Evans</h1>
+  </section>
+
+  <section class="fadeInUp delay1">
+    <div class="stats">
+      <img src="aerialski.jpg" width="500px;" />
+      <h2 class="img-caption">
+        <a href="works_cited"
+          >Foubister, Murray. Colorado Ski Areas. Jpg file, 12 Nov. 2012.
+        </a>
+      </h2>
+
+      <div class="content">
+        <p>
+          While Amendment 2 was looming on the horizon, on July 4th, 1992,
+          Citizens Project, a group inspired by the Amendment 2 legislation,
+          founded as a “group of volunteers who seek to
+          <span
+            >prevent extremists from eliminating our fundamental freedoms”</span
+          >
+        </p>
+
+        <h2 class="quote">
+          A successful boycott can help energize the most progressive Coloradans
+          to overturn their new law. And it would send a potent warning to other
+          states that may soon consider similar measures.
+        </h2>
+        <h3>Anonomous New York Times Opinion Author</h3>
+
+        <p>
+          In November, 53 percent of the state’s voters
+          <span>approved</span> Amendment 2, giving Colorado the nickname of
+          “The Hate State”.
+        </p>
+
+        <p>
+          A <span>national economic boycott</span> started, with many
+          organizations like the American Civil Liberties Union, the Coalition
+          of Labor Union Women, and others.
+        </p>
+
+        <p>
+          Governor Roy Romer and Denver’s mayor Wellington Webb both condemned
+          the amendment. <span>Thousands of protestors</span> were on the
+          streets protesting alongside them. After Amendment 2 was put in place,
+          Colorado estimated that it lost about <span>$40 million</span> in the
+          convention and tourism business.
+        </p>
+
+        <p>
+          This was a major hit, as tourism is a major industry in Colorado,
+          mostly from the ski community. Resorts in Aspen put out ads in
+          newspapers, even though they are usually fully booked around
+          Christmastime, stating their opposition to the anti-gay-rights vote.
+          Celebrities like Whoopi Goldberg, Joan Rivers, and Barbra Streisand
+          support the opposition and boycott of Colorado.
+        </p>
+
+        <h2 class="quote">
+          The ultimate irony is that you target Colorado's ski industry for the
+          boycott. Twenty-six of the state's 27 ski areas are in counties that
+          voted against Amendment 2. Those areas of the state that heavily
+          supported this law will not be affected by a skiing boycott -- only
+          those people who are working hardest to repeal Amendment 2 will be
+          damaged.
+        </h2>
+        <h3>
+          Roger A. Smith, President of the Denver Metro Convention and Visitor's
+          Bureau, Dec. 27. 1992.
+        </h3>
+
+        <p>
+          One major extreme in the boycott was in New York, where gay rights
+          activists extorted the Celestial Seasonings tea company in Boulder
+          Colorado for $100,000 to be donated to the cause. If they didn’t
+          comply, they would stage a boycott against the company and
+          <span>dump Celestial Tea into New York’s East River,</span> staging a
+          “tea party” as a publicity stunt.
+        </p>
+
+        <p>
+          Overall, a Denver Post reporter called Amendment 2 “the biggest
+          public-relations disaster ever to hit Colorado.”
+        </p>
+
+        <a class="fadeInUp delay3 button" href="tribulations_and_triumphs"
+          >← Tribulations-And-Triumphs&nbsp;&nbsp;&nbsp;</a
+        >
+        <a class="fadeInUp delay3 button" href="battle_in_the_supreme_court">Battle-in-the-Supreme-Court→</a>
+      </div>
+    </div>
+  </section>
+</body>
+<!-- </body> -->

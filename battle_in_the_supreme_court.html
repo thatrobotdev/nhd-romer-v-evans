@@ -1,0 +1,356 @@
+<!-- HTML starts within <body> tags -->
+<body>
+  <style>
+    @font-face {
+      font-family: Roboto-Black;
+      src: url(Roboto-Black.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Bold;
+      src: url(Roboto-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Regular;
+      src: url(Roboto-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Thin;
+      src: url(Roboto-Thin.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-ThinItalic;
+      src: url(Roboto-ThinItalic.ttf);
+    }
+
+    @font-face {
+      font-family: Roboto-Medium;
+      src: url(Roboto-Medium.ttf);
+    }
+
+    @-webkit-keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .delay1 {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+
+    .delay2 {
+      -webkit-animation-delay: 0.7s;
+      -moz-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: SFProDisplay-Black, Roboto-Black;
+      font-weight: bolder;
+      font-size: 2.5vw;
+      margin-bottom: 100px;
+      margin-top: 10px;
+    }
+
+    .tagline {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      font-size: 72px;
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(270deg, #0096ff 0%, #00ffec 99%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .stats {
+      background-image: linear-gradient(
+        to left,
+        rgba(0, 150, 255, 0.61) 0%,
+        rgba(0, 255, 236, 0.2) 99%
+      );
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: space-evenly;
+    }
+
+    nav {
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-content: space-evenly;
+    }
+
+    nav p {
+      padding: 50px;
+    }
+
+    a {
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(to right, #024bff, #750288);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-decoration: none;
+    }
+
+    .supremecourt {
+      font-size: 25px;
+    }
+
+    img {
+      border: 8px solid #ffffff;
+      margin: 10px;
+    }
+
+    .content {
+      font-size: 24px;
+      font-family: SFCompactText-Regular, Roboto-Regular;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin: 250px;
+      margin-top: 50px;
+    }
+
+    .img-caption {
+      background-color: white;
+    }
+
+    .quote {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      font-size: 30px;
+      margin: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-family: SFProDisplay-Heavy, Roboto-Bold;
+      font-weight: bold;
+      background-image: -webkit-linear-gradient(left, #024bff, #750288);
+      background-image: -moz-linear-gradient(left, #024bff, #750288);
+      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: linear-gradient(to right, #024bff, #750288);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .button {
+      font-size: 50px;
+    }
+  </style>
+
+  <nav>
+    <p class="romer"><a href="home">romer v. evans</a></p>
+    <p class="tribulations">
+      <a href="tribulations_and_triumphs" class="tribulations"
+        >tribulations and triumphs</a
+      >
+    </p>
+    <p class="boycotts"><a href="boycotts" class="boycotts">boycotts</a></p>
+    <p class="supremecourt">
+      <a href="battle_in_the_supreme_court">battle in the supreme court</a>
+    </p>
+    <p class="thesis"><a href="thesis">thesis</a></p>
+    <p class="process-paper"><a href="process_paper">process paper</a></p>
+    <p class="annotated-bibliography">
+      <a href="annotated_bibliography">annotated bibliography</a>
+    </p>
+  </nav>
+
+  <section class="intro">
+    <h2 class="tagline fadeInUp delay1">Battle in the Supreme Court</h2>
+    <h1 class="fadeInUp delay2">Romer v. Evans</h1>
+  </section>
+
+  <section class="fadeInUp delay1">
+    <div class="stats">
+      <img src="supremecourt.jpeg" width="500px;" />
+      <h2 class="img-caption">
+        <a href="works_cited"
+          >Ree, Kjetil. The Supreme Court of the United States Washington, D.C.
+          Jpeg file, 8 Mar. 2007.
+        </a>
+      </h2>
+
+      <figure>
+        <figcaption>
+          Listen to the the start of the Supreme Court case:
+        </figcaption>
+        <audio controls src="supremecourt.mp3">
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </figure>
+
+      <div class="content">
+        <p>
+          In January of 1993, a preliminary injunction is filed in the Denver
+          District Court because the measure appeared to endorse discrimination.
+          This injunction delays the amendment from being enforced and will take
+          the grievance to the state supreme court.
+        </p>
+
+        <p>
+          In July of 1993, the Colorado Supreme Court voted 6 to 1, saying that
+          Amendment 2 would prohibit the legal protection of homosexuals
+          specifically, forcing them to be
+          <span>“fence[ed] out” from the political process.</span> However, this
+          ruling included that the measure could be passed if it proved a
+          “compelling state interest”. This state interest was argued further to
+          promote “family values” by the Colorado Attorney General Norton.
+        </p>
+
+        <p>
+          On December 15th, 1993, the measure was struck down by Judge Jefferey
+          Bayless, saying that
+          <span
+            >the state interest to promote family values is only valid if it was
+            not at the expense of another group.</span
+          >This was a warning to other states who were trying to pass similar
+          measures.
+        </p>
+
+        <p>
+          In October of 1994, the measure goes to the Colorado Supreme Court for
+          the last time, being deemed as <span>unconstitutional,</span> and is
+          appealed to the United States Supreme Court.
+        </p>
+
+        <p>
+          On October 10th, 1995, the case Romer v. Evans was taken up in the
+          United States Supreme Court. On May 20th, 1996, the court’s opinion
+          was that Colorado’s Amendment 2 was <span>unconstitutional.</span>
+        </p>
+
+        <h2 class="quote">
+          "This is the most important victory ever for lesbian and gay rights"
+        </h2>
+        <h3>
+          Ms. Goldberg, a member of the legal team striking down Amendment 2.
+        </h3>
+
+        <p>
+          The court’s majority opinion was written by Justice Anthony Kennedy,
+          along with John Paul Stevens, Sandra Day O’Connor, David Souter, Ruth
+          Bader Ginsburg, and Stephen Breyer. This opinion had different
+          reasoning than Colorado’s Supreme Court, saying that the amendment was
+          unconstitutional based on its <span>animosity</span> toward
+          homosexuals without any rational reason.
+        </p>
+
+        <p>
+          Justice Kennedy’s opinion of the Court, where it was stated that the
+          Constitution’s “words now are understood to state a commitment to the
+          law’s neutrality where the rights of persons are at stake” conflicts
+          these traditional values.
+        </p>
+
+        <p>
+          A scathing dissenting opinion was written by Justice Antonin Scalia,
+          along with Chief Justice William H. Rehnquist and Justice Clarence
+          Thomas. This dissent noted the decision 10 years earlier with Bowers
+          v. Hardwick, stating that “If it is rational to criminalize the
+          conduct, surely it is rational to deny special favor and protection to
+          those with a self-avowed tendency or desire to engage in the conduct.”
+        </p>
+
+        <p>
+          Justice Scalia in his dissent lauded this amendment as a way to
+          “preserve traditional sexual mores”, and using the law as a tool to
+          “revise those mores through use of the laws”.
+        </p>
+
+        <p>
+          In the US Supreme Court, dissents have been historically apologetic,
+          mainly because
+          <span
+            >disagreeing with the court means that a Justice is going against a
+            generally agreed consensus.</span
+          >
+          Because of this apologetic nature, most justices end their dissents
+          with “I respectfully dissent.”
+        </p>
+
+        <p>
+          Justice Scalia did not follow this trend, being frank when he says in
+          the middle of his dissent “I vigorously dissent”, and finishing his
+          dissent off with <span>“I dissent”</span>, signaling that he was very
+          apprehensive about the Court’s decision.
+        </p>
+
+        <a class="fadeInUp delay3 button" href="boycotts"
+          >← Boycotts&nbsp;&nbsp;&nbsp;</a
+        >
+        <a class="fadeInUp delay3 button" href="thesis">Thesis→</a>
+      </div>
+    </div>
+  </section>
+</body>
+<!-- </body> -->

@@ -1,0 +1,272 @@
+<!-- HTML starts within <body> tags -->
+    <body>
+
+        <style>
+            
+            @font-face {
+                font-family: Roboto-Black;
+                src: url(Roboto-Black.ttf);
+            }
+        
+            @font-face {
+                font-family: Roboto-Bold;
+                src: url(Roboto-Bold.ttf);
+            }
+
+            @font-face {
+                font-family: Roboto-Regular;
+                src: url(Roboto-Regular.ttf);
+            }
+        
+            @font-face {
+                font-family: Roboto-Thin;
+                src: url(Roboto-Thin.ttf);
+            }
+        
+            @font-face {
+                font-family: Roboto-ThinItalic;
+                src: url(Roboto-ThinItalic.ttf);
+            }
+        
+            @font-face {
+                font-family: Roboto-Medium;
+                src: url(Roboto-Medium.ttf);
+            }
+        
+            @-webkit-keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 100%, 0);
+                    transform: translate3d(0, 100%, 0);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: none;
+                    transform: none;
+                }
+            }
+        
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 100%, 0);
+                    transform: translate3d(0, 100%, 0);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: none;
+                    transform: none;
+                }
+            }
+        
+            .fadeInUp {
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+        
+            .delay1 {
+                -webkit-animation-delay: 0.4s;
+                -moz-animation-delay: 0.4s;
+                animation-delay: 0.4s; 
+            }
+        
+            .delay2 {
+                -webkit-animation-delay: .7s;
+                -moz-animation-delay: .7s;
+                animation-delay: .7s; 
+            }
+        
+        
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                margin: 0 auto;
+            }
+        
+            h1 {
+                font-family: SFProDisplay-Black, Roboto-Black;
+                font-weight: bolder;
+                font-size: 2.5vw;
+                margin-bottom: 100px;
+                margin-top: 10px;
+            }
+        
+            .tagline {
+                font-family: SFProDisplay-Heavy, Roboto-Bold;
+                font-weight: bold;
+                font-size: 72px;
+                background-image: -webkit-linear-gradient(left, #024BFF, #750288);
+                background-image: -moz-linear-gradient(left, #024BFF, #750288);
+                background-image: -ms-linear-gradient(left, #024BFF, #750288);
+                background-image: -o-linear-gradient(left, #024BFF, #750288);
+                background-image: linear-gradient(270deg, #0096FF 0%, #00FFEC 99%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+        
+            .intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .stats {
+                background-image: linear-gradient(to left, rgba(0,150,255,0.61) 0%, rgba(0,255,236,0.20) 99%);
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                align-content: space-evenly;
+            }
+        
+            nav {
+                margin: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                align-content: space-evenly;
+            }
+
+    nav p {
+        padding: 50px;
+    }
+        
+            a {
+                background-image: -webkit-linear-gradient(left, #024BFF, #750288);
+                background-image: -moz-linear-gradient(left, #024BFF, #750288);
+                background-image: -ms-linear-gradient(left, #024BFF, #750288);
+                background-image: -o-linear-gradient(left, #024BFF, #750288);
+                background-image: linear-gradient(to right, #024BFF, #750288);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-decoration: none;
+            }
+        
+            .tribulations {
+                font-size: 25px;
+            }
+
+            img {
+                border: 8px solid #FFFFFF;
+                margin: 10px;
+            }
+
+            .content {
+                font-size: 24px;
+                font-family: SFCompactText-Regular, Roboto-Regular;
+                background-color: white;
+                color: black;
+                padding: 20px;
+                margin: 250px;
+                margin-top: 50px;
+            }
+
+            .img-caption {
+                background-color: white;
+            }
+
+            .quote {
+                font-family: SFProDisplay-Heavy, Roboto-Bold;
+                font-weight: bold;
+                font-size: 30px;
+                margin: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-family: SFProDisplay-Heavy, Roboto-Bold;
+                font-weight: bold;
+                background-image: -webkit-linear-gradient(left, #024BFF, #750288);
+                background-image: -moz-linear-gradient(left, #024BFF, #750288);
+                background-image: -ms-linear-gradient(left, #024BFF, #750288);
+                background-image: -o-linear-gradient(left, #024BFF, #750288);
+                background-image: linear-gradient(to right, #024BFF, #750288);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .button {
+                font-size: 50px;
+            }
+            
+        
+        </style>
+        
+        <nav>
+            <p class="romer"><a href="home">romer v. evans</a></p>
+            <p class="tribulations"><a href="tribulations_and_triumphs" class="tribulations">tribulations and triumphs</a></p>
+            <p class="boycotts"><a href="boycotts" class="boycotts">boycotts</a></p>
+            <p class="supremecourt"><a href="battle_in_the_supreme_court">battle in the supreme court</a></p>
+            <p class="thesis"><a href="thesis">thesis</a></p>
+            <p class="process-paper"><a href="process_paper">process paper</a></p>
+            <p class="annotated-bibliography"><a href="annotated_bibliography">annotated bibliography</a></p>
+        </nav>
+        
+        <section class="intro">
+        
+        <h2 class="tagline fadeInUp delay1">Tribulations and Triumphs</h2>
+        <h1 class="fadeInUp delay2">Romer v. Evans</h1>
+        </section>
+        
+        
+        
+        <section class="fadeInUp delay1">
+        
+        
+        <div class="stats">
+        
+            <img src="downtowndenver1960.jpg" width="500px;">
+            <h2 class="img-caption"><a href="works_cited">Boser, Robert J. The Downtown Denver Skyline. Jan. 1966.</a></h2>
+            
+            <div class="content">
+
+            <h2 class="quote">"We must conclude that Amendment 2 classifies homosexuals not to further a proper legislative end but to make them unequal to everyone else. This Colorado cannot do. A State cannot so deem a class of persons a stranger to its laws."</h2>
+            <h3 class="quote-author">Justice Anthony Kennedy</h3>
+            
+            <p>The beginning of the 1990s in Colorado was progressive for the gay rights movement. The municipalities of Aspen, Boulder, and Denver had citywide policies that prohibited discrimination based on sexual orientation.</p>
+
+            <p>However, around this time, the anti-gay group Colorado for Family Values (CFV), founded in June of 1990, stated that their goal was to <span>“stop gay activists before they trample on your freedoms”.</span></p>
+
+            <p>In May of 1992, after CFV had collected 16,000 more signatures than they had needed to get the No Protected Status for Sexual Orientation Amendment (Amendment 2), on the ballot. This law prohibits “the state of Colorado and any of its political subdivisions from adopting or enforcing any law or policy which provides that homosexual, lesbian, or bisexual orientation, conduct, or relationships constitutes or entitles a person to claim <span>any</span> minority or protected status, quota preferences, or discrimination.</p>
+            
+            <p>This amendment presented itself as a <span>barrier</span> to the gay rights movement, jeopardizing the protected status of the group. This amendment was challenged in the Supreme Court from the Equal Protection Clause of the Fourteenth Amendment to the United States Constitution.</p>
+            
+            <h2 class="quote">“All persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside. No State shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any State deprive any person of life, liberty, or property, without due process of law; nor deny to any person within its jurisdiction the equal protection of the laws.”</h2>
+            
+            <p>How this clause is judged and applied in practice has been debated since it was created.</p>
+            
+            <p>Almost immediately after the amendment passed on the ballot, Richard G Evans, a gay man who worked for Mayor Wellington Webb of Denver, became the plaintiff in a case against the Governor of Colorado that challenged the new amendment.</p>
+            
+            <p><span>Homophobia in the United States was an ideological barrier.</span> This homophobia was perpetrated by anti-gay groups like the nonprofit Focus on the Family and Colorado for Family Values. Gay people in Colorado felt generally supported, and Amendment 2 was a shock to the community, especially in Boulder, Aspen, and Denver.</p>
+            
+            <h2 class="quote">“I am familiar with the widespread effort to redefine the family. It is motivated by homosexual activists and others who see the traditional family as a barrier to the social engineering they hope to accomplish.”</h3>
+
+            <h3 class="quote-author">Excerpt from a newsletter sent by Dr. James Dobson in May of 1990, the founder of another Colorado nonprofit, Focus on the Family</h3>
+            
+            <a class="fadeInUp delay3 button" href="home">← Home&nbsp;&nbsp;&nbsp;</a>
+            <a class="fadeInUp delay3 button" href="boycotts">Boycotts→</a>
+            </div>
+
+            
+        
+        </div>
+        
+        
+        </section>
+        
+        </body>
+        <!-- </body> -->
