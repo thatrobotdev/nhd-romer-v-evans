@@ -1,6 +1,7 @@
 <!-- HTML starts within <body> tags -->
 <body>
   <style>
+    /* Load fonts */
     @font-face {
       font-family: Roboto-Black;
       src: url(Roboto-Black.ttf);
@@ -25,6 +26,8 @@
       font-family: Roboto-Medium;
       src: url(Roboto-Medium.ttf);
     }
+
+    /* Animations */
 
     @-webkit-keyframes fadeInUp {
       from {
@@ -63,100 +66,189 @@
 
     .delay1 {
       -webkit-animation-delay: 0.4s;
-      -moz-animation-delay: 0.4s;
       animation-delay: 0.4s;
     }
 
     .delay2 {
       -webkit-animation-delay: 0.7s;
-      -moz-animation-delay: 0.7s;
       animation-delay: 0.7s;
     }
 
     .delay3 {
       -webkit-animation-delay: 1s;
-      -moz-animation-delay: 1s;
       animation-delay: 1s;
     }
+
+    /* Page styling */
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       margin: 0 auto;
+      height: 100vh;
+      display: -ms-grid;
+      display: grid;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+
+    a {
+      background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#024bff),
+        to(#750288)
+      );
+      background-image: linear-gradient(to right, #024bff, #750288);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-column-gap: 2%;
+      -moz-column-gap: 2%;
+      column-gap: 2%;
+      -ms-grid-columns: auto 2% auto 2% auto 2% auto 2% auto 2% auto 2% auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+      padding: 10px;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      margin: auto;
+    }
+
+    #active {
+      font-size: 150%;
+    }
+
+    @media screen and (max-width: 1097px) {
+      nav ul {
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+      }
+
+      #active {
+        font-size: inherit;
+      }
+    }
+
+    /* Main Content */
+
+    main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      overflow: initial;
     }
 
     h1 {
       font-family: SFProDisplay-Black, Roboto-Black;
       font-weight: bolder;
-      font-size: 2.5vw;
-      margin-bottom: 10px;
+      font-size: 2vw;
+      margin: 1.5vh;
     }
 
     .tagline {
       font-family: SFProDisplay-Heavy, Roboto-Bold;
       font-weight: bold;
-      font-size: 72px;
-      background-image: -webkit-linear-gradient(left, #024bff, #750288);
-      background-image: -moz-linear-gradient(left, #024bff, #750288);
-      background-image: -ms-linear-gradient(left, #024bff, #750288);
+      font-size: 100%;
+      font-size: 5vw;
+      margin: 0.5vh;
       background-image: -o-linear-gradient(left, #024bff, #750288);
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#024bff),
+        to(#750288)
+      );
       background-image: linear-gradient(to right, #024bff, #750288);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       text-shadow: 0 1px 3px rgba(238, 161, 252, 0.5);
-      margin-top: 0px;
-      margin-bottom: 37px;
-    }
-
-    .intro {
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .stats {
-      height: 299px;
-      background-image: linear-gradient(to left, #024bff, #750288);
-      margin: 0 auto;
     }
 
     .author {
       font-family: SFProDisplay-Thin, Roboto-Thin;
       font-weight: lighter;
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 1.4vw;
+      margin: 1vh;
     }
 
     .category {
       font-family: SFProDisplay-ThinItalic, Roboto-ThinItalic;
       font-weight: lighter;
       font-style: italic;
-      font-size: 24px;
-      margin-top: 0px;
+      font-size: 1vw;
+      margin: 1vh;
     }
 
-    .section-break {
-      height: 5%;
-      background-image: linear-gradient(
-        to top right,
-        #750288,
-        #024bff 50%,
-        white 50%
+    .button {
+      font-family: SFProDisplay-ThinItalic, Roboto-ThinItalic;
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 1.6vw;
+      margin: 5vh;
+    }
+
+    /* Footer */
+
+    footer {
+      -webkit-clip-path: polygon(0 calc(0% + 3vw), 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 calc(0% + 3vw), 100% 0, 100% 100%, 0 100%);
+      display: -ms-grid;
+      display: grid;
+    }
+
+    .stats {
+      background-image: -o-linear-gradient(right, #024bff, #750288);
+      background-image: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(#024bff),
+        to(#750288)
       );
-      width: 100%;
-      margin: 0 auto;
+      background-image: linear-gradient(to left, #024bff, #750288);
     }
 
     .stats {
       color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
     }
 
@@ -166,71 +258,35 @@
 
     .item h2 {
       font-family: SFProDisplay-Medium, Roboto-Medium;
-      font-size: 72px;
+      font-size: 4vw;
       text-shadow: 0 2px 1px rgba(0, 50, 255, 0.5);
-      margin-top: -50px;
+      margin-top: 70px;
       margin-bottom: 0px;
     }
 
     .item h3 {
       font-family: SFProDisplay-Thin, Roboto-Thin;
       font-weight: lighter;
-      font-size: 48px;
+      font-size: 2vw;
       margin-top: 0px;
-    }
-
-    nav {
-      margin: 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      align-content: space-evenly;
-    }
-
-    nav p {
-      padding: 50px;
-    }
-
-    a {
-      background-image: -webkit-linear-gradient(left, #024bff, #750288);
-      background-image: -moz-linear-gradient(left, #024bff, #750288);
-      background-image: -ms-linear-gradient(left, #024bff, #750288);
-      background-image: -o-linear-gradient(left, #024bff, #750288);
-      background-image: linear-gradient(to right, #024bff, #750288);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-decoration: none;
-    }
-
-    .romer {
-      font-size: 25px;
-    }
-
-    .button {
-      font-size: 30px;
     }
   </style>
 
-  <nav>
-    <p class="romer"><a href="index">romer v. evans</a></p>
-    <p class="tribulations">
-      <a href="tribulations_and_triumphs" class="tribulations"
-        >tribulations and triumphs</a
-      >
-    </p>
-    <p class="boycotts"><a href="boycotts" class="boycotts">boycotts</a></p>
-    <p class="supremecourt">
-      <a href="battle_in_the_supreme_court">battle in the supreme court</a>
-    </p>
-    <p class="thesis"><a href="thesis">thesis</a></p>
-    <p class="process-paper"><a href="process_paper">process paper</a></p>
-    <p class=""><a href="annotated_bibliography">annotated bibliography</a></p>
+  <nav class="page-header">
+    <ul>
+      <li id="active"><a href="index">Romer v. Evans</a></li>
+      <li><a href="tribulations_and_triumphs">Tribulations and Triumphs</a></li>
+      <li><a href="boycotts" class="boycotts">Boycotts</a></li>
+      <li>
+        <a href="battle_in_the_supreme_court">Battle in the Supreme Court</a>
+      </li>
+      <li><a href="thesis">Thesis</a></li>
+      <li><a href="process_paper">Process Paper</a></li>
+      <li><a href="annotated_bibliography">Annotated Bibliography</a></li>
+    </ul>
   </nav>
 
-  <section class="intro">
+  <main>
     <h1 class="fadeInUp delay1">Romer v. Evans</h1>
     <h2 class="tagline fadeInUp delay2">
       A Landmark in Colorado's<br />
@@ -243,11 +299,9 @@
     <a class="fadeInUp delay3 button" href="tribulations_and_triumphs"
       >Enter Site →</a
     >
-  </section>
+  </main>
 
-  <section class="fadeInUp delay1">
-    <div class="section-break"></div>
-
+  <footer class="fadeInUp delay1">
     <div class="stats">
       <div class="item">
         <h2>1,169</h2>
@@ -264,6 +318,6 @@
         <h3>multimedia</h3>
       </div>
     </div>
-  </section>
+  </footer>
 </body>
 <!-- </body> -->
