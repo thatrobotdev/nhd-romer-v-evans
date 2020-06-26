@@ -1,5 +1,7 @@
 # nhd-romer-v-evans
  
+**Currently, the domain nhd.jameskerrane.com is not working. This is because I am in the middle of changing all of my default branches from "master" to "main". This has required me to switch from GitHub Pages to Vercel, so for now the domain is processing. In the mean time, please use the URL https://nhd-romer-v-evans.vercel.app/. Thank you!**
+
 This is the code repository for my [National History Day Project](https://www.nhd.org/), for the 2019-2020 competition. My submission is in the Junior Website Category.
 
  ## Project Information
